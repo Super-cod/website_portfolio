@@ -46,7 +46,7 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Swayam Kapoor</h1>
+          <h1 class="name" title="Richard hanrick">Super-cod !</h1>
 
           <p class="title">Developer</p>
         </div>
@@ -792,7 +792,60 @@
 
   </main>
 
+  <!-- Add this inside the body before the scripts -->
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-text">© <span id="year"></span> Super-cod. All rights reserved.</p>
+    <p class="footer-text">Published on: <span id="publish-date"></span></p>
+  </div>
+</footer>
 
+<script>
+  // Add this script
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("publish-date").textContent = new Date().toLocaleDateString('en-IN');
+</script>
+<style>
+  /*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  background: var(--eerie-black-2);
+  border-top: 1px solid var(--jet);
+  padding: 20px 15px;
+  text-align: center;
+  box-shadow: var(--shadow-1);
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-text {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+@media (min-width: 580px) {
+  .footer {
+    padding: 25px 30px;
+  }
+  
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+</style>
 
 
 

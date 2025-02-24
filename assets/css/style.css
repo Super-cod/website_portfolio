@@ -1900,3 +1900,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.vibe-text{
+  color: aliceblue;
+}
